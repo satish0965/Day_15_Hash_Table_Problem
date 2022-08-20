@@ -46,21 +46,23 @@ namespace DataStructure
             int frequency1 = LinkedHashMap.Get("paranoid");
             Console.WriteLine(frequency1);
 
+            //UC_3:Remove particular word from the paragraph
 
+            LinkedHashMap.Remove("avoidable");
+            int frequency2 = LinkedHashMap.Get("avoidable");
+
+            Console.WriteLine(frequency2);
         }
     }
 }
 
-//UC_2
-//Ability to find frequency of words in a large
-//paragraph phrase “Paranoids are not paranoid because they are paranoid but
-//because they keep putting themselves deliberately into paranoid avoidable situations”
-//- Use hashcode to find index of the words in the para
-//- Create LinkedList for each index and store the words and its frequency
-//- Use LinkedList to do the Hash Table Operation
+//UC_3
+//Remove avoidable word from the phrase “Paranoids are not paranoid
+//because they are paranoid but because they keep putting themselves
+//deliberately into paranoid avoidable situations”
+//- Use LinkedList to do the Hash Table Operation like here the removal of word avoidable
 //- To do this create MyMapNode with Key Value Pair and create LinkedList of MyMapNode
 
 //Result
 //Welcome to Data Structure Problem Using Generics
-//2
-//3
+//0
